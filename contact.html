@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Start a project | Pixel Assembly</title>
+<meta name="description" content="Tell us what you are trying to ship. Send a brief and get a written scope, timeline and price back — usually within two working days. Based in Chennai, India, working worldwide.">
+<link rel="canonical" href="https://pixelassembly.studio/contact.html">
+<meta name="theme-color" content="#efebe3">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pixel Assembly">
+<meta property="og:title" content="Contact | Pixel Assembly">
+<meta property="og:description" content="Send a brief and get a written scope, timeline and fixed price back.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hdr">
+  <div class="container hdr__in">
+    <a class="brand" href="index.html" aria-label="Pixel Assembly — home">
+      <svg class="brand__mark" viewBox="0 0 26 26" aria-hidden="true">
+        <rect width="11" height="11" fill="#16140F"/>
+        <rect x="15" width="11" height="11" fill="#D9380F"/>
+        <rect y="15" width="11" height="11" fill="#D9380F"/>
+        <rect x="15.75" y="15.75" width="9.5" height="9.5" fill="none" stroke="#16140F" stroke-width="1.5"/>
+      </svg>
+      <span class="brand__txt">Pixel<span>Assembly</span></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">Studio</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a class="btn btn--solid btn--sm" href="#enquiry">Start a project</a>
+    </nav>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="phead">
+    <div class="container phead__grid">
+      <div class="phead__title">
+        <nav class="crumb" aria-label="Breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Contact</span></nav>
+        <h1 class="d1 balance">Tell us what you are trying to ship.</h1>
+      </div>
+      <div class="phead__aside">
+        <p class="lede">No forms that go nowhere. Every enquiry is read by someone who could actually build the thing.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sect">
+    <div class="container grid">
+
+      <!-- ------------------------------------------------------ form -->
+      <div style="grid-column:1/8">
+        <form class="form" id="enquiry" novalidate data-reveal>
+          <p class="eyebrow" style="margin-bottom:6px">Project enquiry</p>
+
+          <div class="row-2">
+            <div class="field">
+              <label for="name">Your name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+              <p class="field__err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+              <p class="field__err" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <div class="row-2">
+            <div class="field">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" autocomplete="organization">
+              <p class="field__err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="budget">Budget</label>
+              <!-- Deliberately a free line rather than a set of brackets.
+                   Asking someone to pick a band makes them anchor low or
+                   close the tab; a box they can write anything in does
+                   neither, and it matches how the work is actually priced. -->
+              <input type="text" id="budget" name="budget" autocomplete="off"
+                     placeholder="A figure, a range, or not sure yet">
+              <p class="field__err" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <fieldset style="border:0;padding:0;margin:0">
+            <legend class="mono" style="color:var(--ink-soft);margin-bottom:10px">What do you need?</legend>
+            <div class="checks">
+              <input type="checkbox" id="s1" name="services" value="Custom software"><label for="s1">Software</label>
+              <input type="checkbox" id="s2" name="services" value="Website"><label for="s2">Website</label>
+              <input type="checkbox" id="s3" name="services" value="Video editing"><label for="s3">Video</label>
+              <input type="checkbox" id="s4" name="services" value="Graphic design"><label for="s4">Design</label>
+              <input type="checkbox" id="s5" name="services" value="Paid ads"><label for="s5">Ads</label>
+              <input type="checkbox" id="s6" name="services" value="Social media"><label for="s6">Social</label>
+              <input type="checkbox" id="s7" name="services" value="Not sure"><label for="s7">Not sure</label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="message">What are you building? <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" required placeholder="A few lines is plenty. What it is, who it is for, and when you need it live."></textarea>
+            <p class="field__err" aria-live="polite"></p>
+          </div>
+
+          <!-- Spam trap. Invisible to people, irresistible to bots; must stay empty. -->
+          <div class="hp" aria-hidden="true">
+            <label for="website">Website</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="btn-row">
+            <button class="btn btn--solid" type="submit" id="formSubmit">
+              Send enquiry
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h11M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg>
+            </button>
+            <p class="form__note">We reply within 48 hours.</p>
+          </div>
+
+          <p class="form__status" id="formStatus" role="status" aria-live="polite" hidden></p>
+        </form>
+      </div>
+
+      <!-- --------------------------------------------------- details -->
+      <aside style="grid-column:9/13" data-reveal data-delay="1">
+        <p class="eyebrow">Direct lines</p>
+        <dl class="contact-list">
+          <div class="contact-list__row">
+            <dt>Email</dt>
+            <dd><a class="link-u" href="mailto:info.pixelassembly@gmail.com">info.pixelassembly@gmail.com</a></dd>
+          </div>
+          <div class="contact-list__row">
+            <dt>Phone &amp; WhatsApp</dt>
+            <dd><a class="link-u" href="tel:+918610158290">+91 86101 58290</a></dd>
+          </div>
+          <div class="contact-list__row">
+            <dt>Based in</dt>
+            <dd>Chennai, India<br><span class="soft" style="font-weight:400;font-size:.95rem">Working with clients worldwide</span></dd>
+          </div>
+          <div class="contact-list__row">
+            <dt>Hours</dt>
+            <dd style="font-weight:400;font-size:.97rem">Mon&ndash;Fri, 10:00&ndash;19:00 IST<br><span class="soft">Async the rest of the time</span></dd>
+          </div>
+        </dl>
+
+        <div class="plate" style="margin-top:40px;padding:26px 24px">
+          <p class="mono flame" style="margin-bottom:12px">How we work</p>
+          <h2 class="d4" style="margin-bottom:12px">Mostly in writing</h2>
+          <p class="soft" style="font-size:.93rem;margin-bottom:20px">Email is quicker for both of us and leaves a record we can go back to. If you would rather talk something through, say so and we will set up a call.</p>
+          <a class="btn btn--sm" href="mailto:info.pixelassembly@gmail.com?subject=Project%20enquiry">
+            Email us directly
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h11M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg>
+          </a>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- ================================================== what happens -->
+  <section class="sect-sm inv">
+    <div class="dots" aria-hidden="true"></div>
+    <div class="container">
+      <div class="sect-head" data-reveal>
+        <div class="sect-head__title">
+          <p class="eyebrow">What happens next</p>
+          <h2 class="d2 balance">Three steps, no chasing.</h2>
+        </div>
+      </div>
+      <div class="track track--3" data-reveal>
+        <div class="track__step">
+          <span class="track__k">01</span>
+          <h3 class="d4">We read it properly</h3>
+          <p>Someone technical replies within 48 hours &mdash; with questions if we have them, not an automated acknowledgement.</p>
+        </div>
+        <div class="track__step">
+          <span class="track__k">02</span>
+          <h3 class="d4">Questions, in writing</h3>
+          <p>Whatever is missing from the brief we ask by email &mdash; what already exists, and what the real deadline is. A call only if one of us thinks it would be quicker.</p>
+        </div>
+        <div class="track__step">
+          <span class="track__k">03</span>
+          <h3 class="d4">A written scope</h3>
+          <p>Deliverables, timeline, owners and a price, usually within two working days. Yours to keep whether or not you go ahead.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ftr inv">
+  <div class="container">
+    <div class="ftr__top">
+      <div class="ftr__brand">
+        <a class="brand" href="index.html" style="margin-bottom:20px">
+          <svg class="brand__mark" viewBox="0 0 26 26" aria-hidden="true">
+            <rect width="11" height="11" fill="#EFEBE3"/>
+            <rect x="15" width="11" height="11" fill="#D9380F"/>
+            <rect y="15" width="11" height="11" fill="#D9380F"/>
+            <rect x="15.75" y="15.75" width="9.5" height="9.5" fill="none" stroke="#EFEBE3" stroke-width="1.5"/>
+          </svg>
+          <span class="brand__txt" style="color:var(--paper)">Pixel<span>Assembly</span></span>
+        </a>
+        <p class="soft" style="max-width:34ch;font-size:.95rem">A full-service IT and creative studio. Software, web, video, design, ads and social &mdash; built by one team.</p>
+        <div class="ftr__social">
+          <a href="https://www.instagram.com/pixel.assembly_/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="1.5" y="1.5" width="13" height="13" rx="3.5" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.3"/><circle cx="11.9" cy="4.1" r="1" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+      <div class="ftr__col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#software">Custom software</a></li>
+          <li><a href="services.html#web">Websites &amp; web apps</a></li>
+          <li><a href="services.html#video">Video &amp; motion</a></li>
+          <li><a href="services.html#design">Graphic design</a></li>
+          <li><a href="services.html#ads">Paid ads</a></li>
+          <li><a href="services.html#social">Social media</a></li>
+        </ul>
+      </div>
+      <div class="ftr__col">
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="work.html">Our work</a></li>
+          <li><a href="services.html#engagement">How we price</a></li>
+          <li><a href="services.html#faq">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="ftr__col ftr__col--wide">
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="mailto:info.pixelassembly@gmail.com">info.pixelassembly@gmail.com</a></li>
+          <li><a href="tel:+918610158290">+91 86101 58290</a></li>
+          <li><a href="contact.html">Send a brief</a></li>
+        </ul>
+      </div>
+      <div class="ftr__col">
+        <h4>Where and when</h4>
+        <ul>
+          <li><span class="soft" style="font-size:.93rem">Chennai, India &mdash; working worldwide</span></li>
+          <li><span class="soft" style="font-size:.93rem">Mon&ndash;Fri, 10:00&ndash;19:00 IST</span></li>
+          <li><span class="soft" style="font-size:.93rem">Replies within 48 hours</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr__word" aria-hidden="true">Pixel&nbsp;Assembly</div>
+    <div class="ftr__bar">
+      <span>&copy; <span data-year>2026</span> Pixel Assembly</span>
+      <span>Software &middot; Web &middot; Video &middot; Design &middot; Ads &middot; Social</span>
+      <span><a href="#main">Back to top</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

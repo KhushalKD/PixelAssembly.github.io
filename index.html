@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pixel Assembly — Software, Websites, Video, Design &amp; Ads</title>
+<meta name="description" content="Pixel Assembly is a full-service IT and creative studio: custom software, websites, video editing, graphic design, paid ads and social media management — one team, one point of contact.">
+<link rel="canonical" href="https://pixelassembly.studio/">
+<meta name="theme-color" content="#efebe3">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pixel Assembly">
+<meta property="og:title" content="Pixel Assembly — Software, Websites, Video, Design &amp; Ads">
+<meta property="og:description" content="Custom software, websites, video, design, ads and social — handled by one team, so nothing gets lost between agencies.">
+<meta property="og:url" content="https://pixelassembly.studio/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Pixel Assembly",
+  "description": "Full-service IT and creative studio: custom software, websites, video editing, graphic design, paid advertising and social media management.",
+  "url": "https://pixelassembly.studio/",
+  "email": "info.pixelassembly@gmail.com",
+  "telephone": "+91-86101-58290",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Chennai",
+    "addressRegion": "Tamil Nadu",
+    "addressCountry": "IN"
+  },
+  "areaServed": "Worldwide",
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom software development" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website design and development" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Video editing and motion graphics" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Graphic design and brand identity" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Paid advertising and performance marketing" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Social media management" } }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============================================================ header -->
+<header class="hdr">
+  <div class="container hdr__in">
+    <a class="brand" href="index.html" aria-label="Pixel Assembly — home">
+      <svg class="brand__mark" viewBox="0 0 26 26" aria-hidden="true">
+        <rect width="11" height="11" fill="#16140F"/>
+        <rect x="15" width="11" height="11" fill="#D9380F"/>
+        <rect y="15" width="11" height="11" fill="#D9380F"/>
+        <rect x="15.75" y="15.75" width="9.5" height="9.5" fill="none" stroke="#16140F" stroke-width="1.5"/>
+      </svg>
+      <span class="brand__txt">Pixel<span>Assembly</span></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">Studio</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn--solid btn--sm" href="contact.html">Start a project</a>
+    </nav>
+
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ========================================================== hero -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">Software &middot; Web &middot; Video &middot; Design &middot; Ads &middot; Social</p>
+        <h1 class="d1 balance">Your product, your brand, your feed &mdash; <em>assembled</em> by one team.</h1>
+        <p class="lede hero__lede">Pixel Assembly is a full-service IT and creative studio. Engineering, design, video and marketing sit in the same room, so nothing gets lost in the handover between three different agencies.</p>
+
+        <div class="btn-row">
+          <a class="btn btn--solid" href="contact.html">
+            Start a project
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h11M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="services.html">What we do</a>
+        </div>
+
+        <div class="hero__meta">
+          <div><b>06</b><span>Disciplines in-house</span></div>
+          <div><b>01</b><span>Point of contact</span></div>
+          <div><b>48h</b><span>Reply on enquiries</span></div>
+        </div>
+      </div>
+
+      <div class="hero__stage">
+        <div class="dots" aria-hidden="true"></div>
+        <!-- A lattice of cubes that rises into the things a client ends up
+             with — their site, their brand, their feed, an edit, a campaign,
+             the build underneath — then re-forms into the next. Drawn by
+             assets/js/main.js; the figure maps are at the top of that file. -->
+        <div class="stage3d" aria-hidden="true">
+          <canvas class="stage3d__cv" id="assembly"></canvas>
+        </div>
+        <p class="stage3d__cap" id="assembly-cap" aria-hidden="true">Fig. 01 &mdash; the website</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================== ticker -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <div class="ticker__set">
+        <span class="ticker__item">Custom software</span>
+        <span class="ticker__item">Web apps</span>
+        <span class="ticker__item">Websites</span>
+        <span class="ticker__item">E-commerce</span>
+        <span class="ticker__item">Video editing</span>
+        <span class="ticker__item">Motion graphics</span>
+        <span class="ticker__item">Brand identity</span>
+        <span class="ticker__item">Social creatives</span>
+        <span class="ticker__item">Meta ads</span>
+        <span class="ticker__item">Google ads</span>
+        <span class="ticker__item">SEO</span>
+        <span class="ticker__item">Content calendars</span>
+        <span class="ticker__item">UI / UX</span>
+        <span class="ticker__item">Mobile apps</span>
+        <span class="ticker__item">API integrations</span>
+        <span class="ticker__item">Automation</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================== what we do -->
+  <section class="sect" id="services">
+    <div class="container">
+      <div class="sect-head" data-reveal>
+        <div class="sect-head__title">
+          <p class="eyebrow">What we do</p>
+          <h2 class="d2 balance">Six disciplines. Billed as one project, not four invoices.</h2>
+        </div>
+        <div class="sect-head__aside">
+          <p class="soft">Take the whole stack or just the part you are missing. Either way you deal with one team and one timeline.</p>
+        </div>
+      </div>
+
+      <ol class="ledger" data-reveal>
+        <li class="ledger__row">
+          <span class="ledger__num">01</span>
+          <h3 class="ledger__name">Custom Software</h3>
+          <p class="ledger__desc">Web apps, internal tools, dashboards, APIs and automation built around how your business actually runs.</p>
+          <a class="ledger__go" href="services.html#software" aria-label="Custom software">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h11M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg>
+          </a>
+        </li>
+        <li class="ledger__row">
+          <span class="ledger__num">02</span>
+          <h3 class="ledger__name">Websites &amp; Web Apps</h3>
+          <p class="ledger__desc">Marketing sites, landing pages and storefronts that load fast, rank, and turn visitors into enquiries.</p>
+          <a class="ledger__go" href="services.html#web" aria-label="Websites and web apps">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h11M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg>
+          </a>
+        </li>
+        <li class="ledger__row">
+          <span class="ledger__num">03</span>
+          <h3 class="ledger__name">Video Editing &amp; Motion</h3>
+          <p class="ledger__desc">Reels, YouTube, product films and ad cutdowns &mdash; edited, graded, captioned and delivered in every aspect ratio.</p>
+          <a class="ledger__go" href="services.html#video" aria-label="Video editing and motion">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h11M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg>
+          </a>
+        </li>
+        <li class="ledger__row">
+          <span class="ledger__num">04</span>
+          <h3 class="ledger__name">Graphic Design &amp; Brand</h3>
+          <p class="ledger__desc">Logos, identity systems, packaging, decks, print and the social templates your team can reuse.</p>
+          <a class="ledger__go" href="services.html#design" aria-label="Graphic design and brand">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h11M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg>
+          </a>
+        </li>
+        <li class="ledger__row">
+          <span class="ledger__num">05</span>
+          <h3 class="ledger__name">Paid Ads &amp; Performance</h3>
+          <p class="ledger__desc">Meta, Google and YouTube campaigns with tracking set up properly, so the numbers you report are real.</p>
+          <a class="ledger__go" href="services.html#ads" aria-label="Paid ads and performance">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h11M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg>
+          </a>
+        </li>
+        <li class="ledger__row">
+          <span class="ledger__num">06</span>
+          <h3 class="ledger__name">Social Media Management</h3>
+          <p class="ledger__desc">Calendars, copywriting, creative and community replies &mdash; posted on schedule, every week, without chasing.</p>
+          <a class="ledger__go" href="services.html#social" aria-label="Social media management">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h11M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg>
+          </a>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ====================================================== studio/stats -->
+  <section class="sect inv">
+    <div class="dots" aria-hidden="true"></div>
+    <div class="container">
+      <div class="grid" style="align-items:end" data-reveal>
+        <div style="grid-column:1/7">
+          <p class="eyebrow">Why studios get replaced</p>
+          <h2 class="d2 balance">Most agencies sell you a slice. We are accountable for the whole thing.</h2>
+        </div>
+        <div style="grid-column:8/13">
+          <p class="body-lg">A developer who has never seen the ad creative. An editor who does not know the brand rules. A marketer waiting on a landing page. Half of every project is spent translating between vendors &mdash; so we removed the vendors.</p>
+        </div>
+      </div>
+
+      <!-- PLACEHOLDER FIGURES — replace with your real numbers before launch -->
+      <div class="stats stats--3" style="margin-top:clamp(48px,6vw,86px)" data-reveal>
+        <div class="stats__cell">
+          <p class="stats__n"><span data-count="70">0</span><i>+</i></p>
+          <p class="stats__l">Projects shipped</p>
+        </div>
+        <div class="stats__cell">
+          <p class="stats__n"><span data-count="5">0</span></p>
+          <p class="stats__l">Countries delivered to</p>
+        </div>
+        <div class="stats__cell">
+          <p class="stats__n"><span data-count="4.9" data-dec="1">0</span><i>/5</i></p>
+          <p class="stats__l">Average client rating</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================= process -->
+  <section class="sect">
+    <div class="container">
+      <div class="sect-head" data-reveal>
+        <div class="sect-head__title">
+          <p class="eyebrow">How it runs</p>
+          <h2 class="d2 balance">Four stages. No surprises on the invoice.</h2>
+        </div>
+        <div class="sect-head__aside">
+          <p class="soft">Fixed scope, fixed price, weekly builds you can actually click on.</p>
+        </div>
+      </div>
+
+      <div class="track" data-reveal>
+        <div class="track__step">
+          <span class="track__k">01</span>
+          <h3 class="d4">Scope</h3>
+          <p>You send the brief, we ask whatever is missing in writing, and back comes a scope: deliverables, timeline, owner for each item, and what it costs. Nothing starts before you sign it off.</p>
+        </div>
+        <div class="track__step">
+          <span class="track__k">02</span>
+          <h3 class="d4">Design</h3>
+          <p>Wireframes, visual direction and copy approved before a single line of code or a frame of footage is cut.</p>
+        </div>
+        <div class="track__step">
+          <span class="track__k">03</span>
+          <h3 class="d4">Build</h3>
+          <p>Weekly builds on a staging link. Your feedback goes into the next one &mdash; no month-long silences.</p>
+        </div>
+        <div class="track__step">
+          <span class="track__k">04</span>
+          <h3 class="d4">Run</h3>
+          <p>Launch, then hosting, monitoring, content, ads and reporting on a monthly retainer if you want us to stay.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================== selected work -->
+  <section class="sect sect-rule">
+    <div class="container">
+      <div class="sect-head" data-reveal>
+        <div class="sect-head__title">
+          <p class="eyebrow">Selected work</p>
+          <h2 class="d2 balance">Recent builds</h2>
+        </div>
+        <div class="sect-head__aside">
+          <a class="more" href="work.html">
+            <span class="more__k">The archive</span>
+            <span class="more__t">All projects</span>
+            <span class="more__i" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h11M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Three of the builds from work.html. Keep them in step with that page. -->
+      <div class="work">
+        <article class="work__item tilt" data-tilt="8" data-reveal>
+          <a class="card tilt__in" href="work.html">
+            <figure class="card__fig card--wide" style="aspect-ratio:16/10">
+              <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="width:100%;height:100%">
+                <rect width="400" height="250" fill="#E6E1D7"/>
+                <rect x="28" y="28" width="212" height="138" fill="#16140F"/>
+                <rect x="42" y="42" width="66" height="7" fill="#EFEBE3" opacity=".5"/>
+                <rect x="42" y="64" width="104" height="7" fill="#EFEBE3"/>
+                <rect x="190" y="64" width="34" height="7" fill="#8B8379"/>
+                <rect x="42" y="84" width="82" height="7" fill="#EFEBE3"/>
+                <rect x="190" y="84" width="34" height="7" fill="#8B8379"/>
+                <rect x="42" y="104" width="118" height="7" fill="#EFEBE3"/>
+                <rect x="190" y="104" width="34" height="7" fill="#8B8379"/>
+                <rect x="42" y="124" width="182" height="2" fill="#8B8379"/>
+                <rect x="42" y="138" width="52" height="12" fill="#EFEBE3" opacity=".5"/>
+                <rect x="162" y="134" width="62" height="20" fill="#D9380F"/>
+                <rect x="256" y="28" width="116" height="138" fill="#DCD6C9"/>
+                <rect x="270" y="42" width="26" height="26" fill="#EFEBE3"/>
+                <rect x="302" y="42" width="26" height="26" fill="#EFEBE3"/>
+                <rect x="334" y="42" width="26" height="26" fill="#EFEBE3"/>
+                <rect x="270" y="74" width="26" height="26" fill="#EFEBE3"/>
+                <rect x="302" y="74" width="26" height="26" fill="#EFEBE3"/>
+                <rect x="334" y="74" width="26" height="26" fill="#16140F"/>
+                <rect x="270" y="110" width="90" height="42" fill="#16140F"/>
+                <rect x="28" y="182" width="150" height="44" fill="#EFEBE3"/>
+                <rect x="42" y="194" width="56" height="6" fill="#16140F"/>
+                <rect x="42" y="206" width="88" height="5" fill="#8B8379"/>
+                <rect x="42" y="215" width="68" height="5" fill="#8B8379"/>
+                <rect x="198" y="182" width="174" height="44" fill="#1C3C8C"/>
+                <rect x="216" y="198" width="58" height="12" fill="#EFEBE3"/>
+                <rect x="320" y="195" width="34" height="18" fill="#EFEBE3" opacity=".5"/>
+              </svg>
+            </figure>
+            <div class="card__body tilt__pop--deep">
+              <div class="card__meta"><span>Custom software</span><span>In store</span></div>
+              <h3 class="d4">Point of sale system</h3>
+              <p class="measure">Fast item lookup, split payments, returns and a day-end total that reconciles itself &mdash; with stock moving as each sale goes through.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="work__item tilt" data-tilt="8" data-reveal data-delay="1">
+          <a class="card tilt__in" href="work.html">
+            <figure class="card__fig card--wide" style="aspect-ratio:16/10">
+              <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="width:100%;height:100%">
+                <rect width="400" height="250" fill="#E6E1D7"/>
+                <rect x="28" y="22" width="344" height="26" fill="#16140F"/>
+                <rect x="42" y="31" width="8" height="8" fill="#D9380F"/>
+                <rect x="306" y="31" width="52" height="8" fill="#EFEBE3" opacity=".5"/>
+                <rect x="28" y="62" width="164" height="82" fill="#EFEBE3"/>
+                <path d="M84 76h40l14 11-10 10-6-5v34H86V92l-6 5-10-10z" fill="#16140F"/>
+                <rect x="208" y="62" width="164" height="82" fill="#EFEBE3"/>
+                <path d="M258 76h54v22l-9 4v34h-36V102l-9-4z" fill="#1C3C8C"/>
+                <rect x="28" y="156" width="164" height="70" fill="#EFEBE3"/>
+                <path d="M70 168h54v24h-8v24H78v-24h-8z" fill="#8B8379"/>
+                <rect x="208" y="156" width="164" height="70" fill="#EFEBE3"/>
+                <path d="M258 168h54v13h-9v35h-36v-35h-9z" fill="#D9380F"/>
+              </svg>
+            </figure>
+            <div class="card__body tilt__pop--deep">
+              <div class="card__meta"><span>E-commerce</span><span>Shopify</span></div>
+              <h3 class="d4">Clothing store on Shopify</h3>
+              <p class="measure">Collections, size and colour variants, and a checkout that stays out of the way. Theme built to the brand, not a stock one with the logo dropped in.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="work__item tilt" data-tilt="8" data-reveal data-delay="2">
+          <a class="card tilt__in" href="work.html">
+            <figure class="card__fig card--wide" style="aspect-ratio:16/10">
+              <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="width:100%;height:100%">
+                <rect width="400" height="250" fill="#E6E1D7"/>
+                <rect width="400" height="28" fill="#16140F"/>
+                <rect x="14" y="10" width="8" height="8" fill="#D9380F"/>
+                <rect x="30" y="12" width="58" height="5" fill="#EFEBE3" opacity=".6"/>
+                <rect x="18" y="44" width="232" height="18" fill="#DCD6C9"/>
+                <rect x="26" y="50" width="42" height="6" fill="#16140F"/>
+                <rect x="106" y="50" width="28" height="6" fill="#8B8379"/>
+                <rect x="166" y="50" width="22" height="6" fill="#8B8379"/>
+                <rect x="212" y="50" width="30" height="6" fill="#8B8379"/>
+                <rect x="18" y="68" width="232" height="20" fill="#EFEBE3"/>
+                <rect x="26" y="75" width="58" height="6" fill="#16140F"/>
+                <rect x="106" y="75" width="20" height="6" fill="#8B8379"/>
+                <rect x="166" y="75" width="16" height="6" fill="#8B8379"/>
+                <rect x="212" y="73" width="30" height="10" fill="#16140F"/>
+                <rect x="26" y="99" width="46" height="6" fill="#16140F"/>
+                <rect x="106" y="99" width="24" height="6" fill="#8B8379"/>
+                <rect x="166" y="99" width="16" height="6" fill="#8B8379"/>
+                <rect x="212" y="97" width="30" height="10" fill="#D9380F"/>
+                <rect x="18" y="116" width="232" height="20" fill="#EFEBE3"/>
+                <rect x="26" y="123" width="66" height="6" fill="#16140F"/>
+                <rect x="106" y="123" width="18" height="6" fill="#8B8379"/>
+                <rect x="166" y="123" width="16" height="6" fill="#8B8379"/>
+                <rect x="212" y="121" width="30" height="10" fill="#16140F"/>
+                <rect x="26" y="147" width="52" height="6" fill="#16140F"/>
+                <rect x="106" y="147" width="22" height="6" fill="#8B8379"/>
+                <rect x="166" y="147" width="16" height="6" fill="#8B8379"/>
+                <rect x="212" y="145" width="30" height="10" fill="#1C3C8C"/>
+                <rect x="18" y="164" width="232" height="20" fill="#EFEBE3"/>
+                <rect x="26" y="171" width="60" height="6" fill="#16140F"/>
+                <rect x="106" y="171" width="20" height="6" fill="#8B8379"/>
+                <rect x="166" y="171" width="16" height="6" fill="#8B8379"/>
+                <rect x="212" y="169" width="30" height="10" fill="#16140F"/>
+                <rect x="272" y="40" width="110" height="180" fill="#16140F"/>
+                <rect x="280" y="52" width="94" height="152" fill="#EFEBE3"/>
+                <rect x="288" y="62" width="40" height="6" fill="#16140F"/>
+                <rect x="288" y="78" width="78" height="16" fill="#DCD6C9"/>
+                <rect x="294" y="83" width="34" height="6" fill="#16140F"/>
+                <rect x="342" y="82" width="18" height="8" fill="#D9380F"/>
+                <rect x="288" y="100" width="78" height="16" fill="#DCD6C9"/>
+                <rect x="294" y="105" width="44" height="6" fill="#16140F"/>
+                <rect x="288" y="122" width="78" height="16" fill="#DCD6C9"/>
+                <rect x="294" y="127" width="28" height="6" fill="#16140F"/>
+                <rect x="288" y="150" width="78" height="18" fill="#D9380F"/>
+                <rect x="310" y="156" width="34" height="6" fill="#EFEBE3"/>
+              </svg>
+            </figure>
+            <div class="card__body tilt__pop--deep">
+              <div class="card__meta"><span>Custom software</span><span>Web &amp; mobile</span></div>
+              <h3 class="d4">Inventory management system</h3>
+              <p class="measure">Stock levels, purchase orders and movement between locations in one system, with the same interface on a phone as on a desktop &mdash; so counts happen on the floor instead of being written on paper and typed in later.</p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================= quote -->
+  <section class="sect-sm inv">
+    <div class="container container-tight">
+      <!-- PLACEHOLDER TESTIMONIAL — replace with a real, approved quote -->
+      <figure class="quote" data-reveal>
+        <div class="quote__mark" aria-hidden="true">&ldquo;</div>
+        <div class="quote__body">
+          <blockquote>We had a developer, a video editor and an ads agency who never spoke to each other. Pixel Assembly took over all three and the first thing that changed was how little we had to explain.</blockquote>
+          <figcaption>Operations Director &middot; Logistics &middot; Client name on request</figcaption>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- =========================================================== cta -->
+  <section class="sect-sm band-flame">
+    <div class="container">
+      <div class="grid" style="align-items:center">
+        <div style="grid-column:1/8">
+          <p class="eyebrow">Next step</p>
+          <h2 class="d2 balance">Tell us what you are trying to ship.</h2>
+          <p class="lede" style="margin-top:18px;max-width:46ch">Send over the rough idea. You get a written scope with a timeline and a fixed price &mdash; no retainer talk until you have seen it.</p>
+        </div>
+        <div style="grid-column:9/13">
+          <a class="btn" href="contact.html" style="width:100%;justify-content:center">
+            Start a project
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h11M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg>
+          </a>
+          <p class="mono" style="margin-top:18px">Or mail info.pixelassembly@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================ footer -->
+<footer class="ftr inv">
+  <div class="container">
+    <div class="ftr__top">
+      <div class="ftr__brand">
+        <a class="brand" href="index.html" style="margin-bottom:20px">
+          <svg class="brand__mark" viewBox="0 0 26 26" aria-hidden="true">
+            <rect width="11" height="11" fill="#EFEBE3"/>
+            <rect x="15" width="11" height="11" fill="#D9380F"/>
+            <rect y="15" width="11" height="11" fill="#D9380F"/>
+            <rect x="15.75" y="15.75" width="9.5" height="9.5" fill="none" stroke="#EFEBE3" stroke-width="1.5"/>
+          </svg>
+          <span class="brand__txt" style="color:var(--paper)">Pixel<span>Assembly</span></span>
+        </a>
+        <p class="soft" style="max-width:34ch;font-size:.95rem">A full-service IT and creative studio. Software, web, video, design, ads and social &mdash; built by one team.</p>
+        <div class="ftr__social">
+          <a href="https://www.instagram.com/pixel.assembly_/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="1.5" y="1.5" width="13" height="13" rx="3.5" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.3"/><circle cx="11.9" cy="4.1" r="1" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+
+      <div class="ftr__col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#software">Custom software</a></li>
+          <li><a href="services.html#web">Websites &amp; web apps</a></li>
+          <li><a href="services.html#video">Video &amp; motion</a></li>
+          <li><a href="services.html#design">Graphic design</a></li>
+          <li><a href="services.html#ads">Paid ads</a></li>
+          <li><a href="services.html#social">Social media</a></li>
+        </ul>
+      </div>
+
+      <div class="ftr__col">
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="work.html">Our work</a></li>
+          <li><a href="services.html#engagement">How we price</a></li>
+          <li><a href="services.html#faq">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="ftr__col ftr__col--wide">
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="mailto:info.pixelassembly@gmail.com">info.pixelassembly@gmail.com</a></li>
+          <li><a href="tel:+918610158290">+91 86101 58290</a></li>
+          <li><a href="contact.html">Send a brief</a></li>
+        </ul>
+      </div>
+
+      <div class="ftr__col">
+        <h4>Where and when</h4>
+        <ul>
+          <li><span class="soft" style="font-size:.93rem">Chennai, India &mdash; working worldwide</span></li>
+          <li><span class="soft" style="font-size:.93rem">Mon&ndash;Fri, 10:00&ndash;19:00 IST</span></li>
+          <li><span class="soft" style="font-size:.93rem">Replies within 48 hours</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ftr__word" aria-hidden="true">Pixel&nbsp;Assembly</div>
+
+    <div class="ftr__bar">
+      <span>&copy; <span data-year>2026</span> Pixel Assembly</span>
+      <span>Software &middot; Web &middot; Video &middot; Design &middot; Ads &middot; Social</span>
+      <span><a href="#main">Back to top</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
