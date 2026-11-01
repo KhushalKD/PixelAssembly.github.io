@@ -49,6 +49,12 @@ no build step. Change one, change all five (six with `404.html`).
 
 ## Before you launch — checklist
 
+The domain is `pixelassembly.studio`, requested through the GitHub Student Developer Pack
+and awaiting approval at the time of writing. All 13 absolute references already point
+there — canonical tags on five pages, the OG urls, `robots.txt` and `sitemap.xml` — so
+nothing needs changing when it comes through. If it does not, those are the places to
+edit.
+
 Real and confirmed: email `info.pixelassembly@gmail.com`, phone `+91 86101 58290`,
 "Chennai, India — working worldwide", a 48-hour reply promise, the Instagram handle
 (`instagram.com/pixel.assembly_`), a 2023–2026 studio timeline, and the ten
@@ -58,7 +64,7 @@ placeholder. Search for the marker in the third column.
 
 | What | Where | Marker |
 |---|---|---|
-| Domain `pixelassembly.studio` (13 places) | canonical + OG tags, `robots.txt`, `sitemap.xml` | `pixelassembly.studio` |
+| No social preview image | every page | `og:image` |
 | Stat figures (70+, 5, 4.9/5, 86%) | `index.html`, `work.html` | `PLACEHOLDER FIGURES` |
 | No project carries an outcome line | `work.html` | `card__out` |
 | The testimonial | `index.html` | `PLACEHOLDER TESTIMONIAL` |
@@ -85,6 +91,16 @@ The budget field is a free text input on purpose, not a set of brackets: asking 
 to pick a band makes them anchor low or close the tab. It posts under the same `budget`
 name, so the Apps Script is unaffected. There is now no `<select>` anywhere on the site,
 which leaves the `.field select` chevron rule unused but ready if one comes back.
+
+### Social previews
+
+Every page sets `og:title`, `og:description`, `og:url` and a canonical, but **no page sets
+`og:image`** — the site ships with no raster images at all, and an SVG favicon will not do:
+Facebook, WhatsApp and LinkedIn all ignore SVG for previews. The home page also declares
+`twitter:card content="summary_large_image"`, which promises a large image that does not
+exist. Either add a 1200x630 PNG at `assets/img/og.png` and reference it from all five
+pages, or drop the card type to `summary`. Leaving it as it is means every shared link —
+including every ad — renders as a bare text row.
 
 ### The footer grid
 
