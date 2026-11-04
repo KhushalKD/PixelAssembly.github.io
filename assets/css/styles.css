@@ -304,6 +304,7 @@ section { position: relative; }
    shared border with internal dividers falls apart the moment the row wraps,
    which is exactly what happened at phone width. */
 .filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.work-projects { padding-top: clamp(32px, 4vw, 56px); }
 .filters button {
   padding: 10px 16px;
   border: 1px solid var(--rule);
